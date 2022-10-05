@@ -1,0 +1,30 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mon site web</title>
+      
+    
+    
+        <style type="text/css">
+            body{
+                color: #aa082e;
+                background-color: : #b6bde7 !important;
+                font-family: 'Roboto', sans-serif;}
+            
+        </style>
+    
+    
+</head>
+<body>
+
+       
+    {% for i in listeAuthor %}
+    <h1> id = {{ i.id }}</h1>
+    <h1> firstname = {{ i.firstname }}</h1>
+    <h1> lastname = {{i.lastname}}</h1>
+    <h1> wikipedia = {{ i.wikipedia }}</h1>
+    {% endfor %}
+</body>
+</html>
